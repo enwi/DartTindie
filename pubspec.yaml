@@ -1,10 +1,10 @@
 name: darttindie
-description: Dart wrapper for Tindie Order API
-version: 1.0.0-dev.1
+description: Simple Dart wrapper for Tindie Order API
+version: 1.0.0-dev.2
 homepage: https://github.com/enwi/DartTindie
 
 environment:
-  sdk: ">=2.16.0-80.1.beta <3.0.0"
+  sdk: ">=2.14.0 <3.0.0"
   flutter: ">=1.17.0"
 
 dependencies:

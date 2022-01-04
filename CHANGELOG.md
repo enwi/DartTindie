@@ -1,3 +1,8 @@
+## 1.0.0-dev.2
+
+### Fix flutter version
+ - Change to stable channel
+
 ## 1.0.0-dev.1
 
 ### Add crude implementation of Tindie order api
