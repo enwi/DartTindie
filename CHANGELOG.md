@@ -1,3 +1,10 @@
+## 1.0.0-dev.3
+
+### Update README and add security notice
+ - Add Discord Server and link to releases to README
+ - Add security notice to example and README
+ - Fix feature description of README
+
 ## 1.0.0-dev.2
 
 ### Fix flutter version

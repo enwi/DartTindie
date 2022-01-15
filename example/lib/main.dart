@@ -29,6 +29,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   final tindie = Tindie(
+    // Note: Never publish your Tindie API Key! It is a secret and should remain one!
     apikey: 'enter your api key',
     username: 'enter your username',
   );
@@ -43,7 +44,6 @@ class _MyHomePageState extends State<MyHomePage> {
         title: const Text('Tindie Order Demo'),
       ),
       body: Column(
-        // mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Row(
