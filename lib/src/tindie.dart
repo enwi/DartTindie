@@ -81,6 +81,9 @@ class Order {
 
   final List<Item> items;
 
+  get firstName => shippingName.split(' ').first;
+  get surName => shippingName.split(' ').last;
+
   Order({
     required this.number,
     required this.date,

@@ -1,3 +1,9 @@
+## 1.0.0-dev.4
+
+### Add convenience functions for getting first and surname
+ - Add getter for first name
+ - Add getter for surname
+
 ## 1.0.0-dev.3
 
 ### Update README and add security notice
