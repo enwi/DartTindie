@@ -166,17 +166,25 @@ class Tindie {
 
   Tindie({required this.username, required this.apikey});
 
-  Future<List<Order>> getOrders({bool? shipped}) async {
+  Future<List<Order>> getOrders(
+      {final int? limit, final int? offset, final bool? shipped}) async {
+    Map<String, dynamic> parameters = {};
+    if (limit != null) {
+      parameters['limit'] = limit;
+    }
+    if (offset != null) {
+      parameters['offset'] = offset;
+    }
+    if (shipped != null) {
+      parameters['shipped'] = shipped;
+    }
     final response = await http.get(
       Uri(
-          scheme: 'https',
-          host: 'www.tindie.com',
-          path: '/api/v1/order',
-          queryParameters: shipped == null
-              ? null
-              : {
-                  'shipped': shipped ? 'true' : 'false',
-                }),
+        scheme: 'https',
+        host: 'www.tindie.com',
+        path: '/api/v1/order',
+        queryParameters: parameters,
+      ),
       headers: {
         'Authorization': 'ApiKey $username:$apikey',
       },
