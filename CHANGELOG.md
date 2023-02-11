@@ -1,3 +1,9 @@
+## 1.0.0-dev.5
+
+### Add parameters for limit and offset
+ - Add parameter for specifying a limit of orders to get
+ - Add parameter for specifying an offset of orders to skip
+
 ## 1.0.0-dev.4
 
 ### Add convenience functions for getting first and surname
